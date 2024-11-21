@@ -1,0 +1,13 @@
+# directories
+.DS_Store
+.pnp
+node_modules
+
+# files
+.env
+.env.*
+.pnp.js
+npm-debug.log*
+yarn.lock
+yarn-debug.log*
+yarn-error.log*
