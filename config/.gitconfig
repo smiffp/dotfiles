@@ -1,0 +1,6 @@
+[includeIf "gitdir:/Volumes/dev/smiffp/"]
+	path = ~/.gitconfig.personal
+[includeIf "gitdir:/Volumes/dev/smithandco/"]
+	path = ~/.gitconfig.smithandco
+[includeIf "gitdir:/Volumes/dev/stayai/"]
+	path = ~/.gitconfig.work

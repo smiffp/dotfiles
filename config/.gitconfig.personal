@@ -1,0 +1,15 @@
+[commit]
+    gpgsign = true
+[core]
+    editor = code --wait
+[gpg]
+	program = gpg
+[init]
+    defaultBranch = main
+[user]
+	name = Phillip Smith
+	email = 70444396+smiffp@users.noreply.github.com
+    # update signing key after generating new cert
+	signingkey = EE81E9F486F08DDF
+[url "git@github_personal.com"]
+    insteadOf = git@github.com

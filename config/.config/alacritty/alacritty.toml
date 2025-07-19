@@ -1,0 +1,18 @@
+[general]
+import = [
+    "~/.config/alacritty/fonts/jetbrains-mono.toml",
+    "~/.config/alacritty/themes/rose-pine-moon.toml",
+]
+
+[font]
+size = 12
+
+[font.normal]
+style = "Thin"
+
+[terminal]
+shell = { program = "/bin/zsh" }
+
+[window]
+decorations = "Transparent"
+padding = { x = 16, y = 32 }
