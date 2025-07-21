@@ -9,17 +9,12 @@ layout {
         }
     }
     tab name="System" split_direction="vertical" focus=true {
-        pane command="btop"
-        pane command="lazydocker"
+        pane name="btop" command="btop"
+        pane name="lazydocker" command="lazydocker"
     }
     tab name="General" split_direction="vertical" cwd="/Volumes/dev" {
-        pane 
-        pane 
-        pane
-    }
-    tab name="Stay" split_direction="vertical" cwd="/Volumes/dev/stayai" {
-        pane 
-        pane 
-        pane
+        pane name="dev"
+        pane name="dev"
+        pane name="dev"
     }
 }

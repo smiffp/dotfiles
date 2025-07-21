@@ -1,3 +1,4 @@
+# ? generate .gitconfigs
 if [ -z $1 ]; then
   echo "Email is required"
   exit 1;
