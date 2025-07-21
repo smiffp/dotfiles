@@ -14,7 +14,7 @@ after-login-command = []
 # Available commands : https://nikitabobko.github.io/AeroSpace/commands
 after-startup-command = [
     "exec-and-forget borders",
-    
+
     # workspace 1
     "exec-and-forget open -b org.alacritty",
     # "exec-and-forget open -n /Applications/Alacritty.app",
@@ -211,6 +211,10 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+# Get app name
+# osascript -e 'id of app "$APP_NAME"'
+#
 
 # workspace 1
 [[on-window-detected]]

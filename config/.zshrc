@@ -15,7 +15,7 @@ ZSH_THEME="void"
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
- 
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -73,7 +73,7 @@ ZSH_DISABLE_COMPFIX=true
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git asdf)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -120,7 +120,7 @@ PATH="${ORIGINAL_PATH}"
 
 # asdf,brew
 HOMEBREW_PATH="/opt/homebrew/bin:/opt/homebrew/sbin"
-ASDF_PATH="${HOME}/.asdf/bin"
+ASDF_PATH="${HOME}/opt/homebrew/bin/asdf"
 PATH="${ASDF_PATH}:${HOMEBREW_PATH}:${PATH}";
 
 # runtimes
@@ -155,17 +155,26 @@ case $TERM in
     ;;
 esac
 
-# completions
-if command -v ngrok &>/dev/null; then
-    eval "$(ngrok completion)"
-fi
-
 # pnpm
 export PNPM_HOME="/Users/phillipsmith/Library/pnpm"
 case ":$PATH:" in
     *":$PNPM_HOME:"*) ;;
     *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# completions
+# ngrok
+if command -v ngrok &>/dev/null; then
+    eval "$(ngrok completion)"
+fi
+
+# initialize asdf
+fpath=(${ASDF_DATA_DIR}/completions $fpath)
+autoload -Uz compinit && compinit
+
+# The following lines have been added by Docker Desktop to enable Docker CLI completions.
+fpath=(/Users/phillipsmith/.docker/completions $fpath)
+autoload -Uz compinit && compinit
 
 if [ -n "${ALACRITTY_WINDOW_ID}" ]; then
     if [ -z "$(pgrep zellij)" ]; then
