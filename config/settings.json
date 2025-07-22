@@ -1,0 +1,41 @@
+{
+  "chat.editor.fontFamily": "'JetBrainsMonoNL Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "chat.editor.fontSize": 12.25,
+  "chat.editor.fontWeight": "300",
+
+  "editor.codeLensFontFamily": "'JetBrainsMonoNL Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.codeLensFontSize": 9,
+  "editor.fontFamily": "'JetBrainsMonoNL Nerd Font', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontSize": 12,
+  "editor.fontWeight": "300",
+  "editor.minimap.enabled": false,
+
+  "explorer.compactFolders": false,
+
+  "search.collapseResults": "alwaysCollapse",
+  "security.workspace.trust.untrustedFiles": "open",
+
+  "terminal.integrated.defaultProfile.osx": "zsh",
+
+  "typescript.referencesCodeLens.enabled": true,
+  "typescript.referencesCodeLens.showOnAllFunctions": true,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
+
+  "workbench.colorTheme": "Rosé Pine Moon (no italics)",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.startupEditor": "none",
+
+  // third-party extension configuration
+  "clock.dateFormat": "HH:MM",
+
+  "docker.extension.enableComposeLanguageServer": false,
+
+  "maptz.regionfolder": {
+    "collapseDefaultRegionsOnOpen": true
+  },
+
+  "redhat.telemetry.enabled": true,
+
+  "vsicons.dontShowNewVersionMessage": true
+}

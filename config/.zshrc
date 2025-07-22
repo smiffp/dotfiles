@@ -119,7 +119,7 @@ ASDF_PATH="/opt/homebrew/bin/asdf"
 PATH="${ASDF_PATH}:${HOMEBREW_PATH}:${PATH}";
 
 # runtimes
-DOTNET_PATH="$(asdf where dotnet-core)/bin"
+DOTNET_PATH="$(asdf where dotnet)/bin"
 GOLANG_PATH="$(asdf where golang)/bin"
 JAVA_PATH="$(asdf where java)/bin"
 LAZYDOCKER_PATH="$(asdf where lazydocker)/bin"
